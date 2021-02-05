@@ -1,17 +1,8 @@
 {
   "keys": "F:\\EggDemo\\config\\config.default.js",
-  "session": {
-    "maxAge": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js"
-  },
   "security": {
-    "domainWhiteList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "F:\\EggDemo\\config\\config.default.js",
       "type": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
       "useSession": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
@@ -22,6 +13,9 @@
       "queryName": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
       "value": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js"
@@ -59,6 +53,12 @@
       "ipBlackList": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "session": {
+    "maxAge": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "F:\\EggDemo\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
     "shtml": "F:\\EggDemo\\node_modules\\egg-security\\config\\config.default.js"

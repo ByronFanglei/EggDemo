@@ -15,8 +15,7 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
     "path": "/login",
@@ -31,20 +30,9 @@
       "HEAD",
       "GET"
     ],
-    "paramNames": [
-      {
-        "name": "age",
-        "prefix": "/",
-        "delimiter": "/",
-        "optional": false,
-        "repeat": false,
-        "partial": false,
-        "asterisk": false,
-        "pattern": "[^\\/]+?"
-      }
-    ],
-    "path": "/register/:age",
-    "regexp": "/^\\/register\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "paramNames": [],
+    "path": "/register",
+    "regexp": "/^\\/register(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -58,6 +46,18 @@
     "paramNames": [],
     "path": "/userlist",
     "regexp": "/^\\/userlist(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/posttest",
+    "regexp": "/^\\/posttest(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

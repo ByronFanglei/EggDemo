@@ -1,0 +1,15 @@
+2021-02-05 20:05:05,524 ERROR 18852 [-/127.0.0.1/-/14ms POST /login] nodejs.TypeError: ctx.validate is not a function
+    at AccountController.login (E:\EggDemo\app\controller\account.js:14:9)
+    at Object.callFn (E:\EggDemo\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\EggDemo\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\EggDemo\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\EggDemo\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at next (E:\EggDemo\node_modules\koa-compose\index.js:45:18)
+    at E:\EggDemo\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at E:\EggDemo\node_modules\koa-compose\index.js:36:12
+
+pid: 18852
+hostname: WN-20210107NKEO
+
