@@ -7,5 +7,73 @@
 </head>
 <body>
   <h1>egg hello</h1>
+  <div id="app">
+    <ul>
+      <li v-for='item of userlist'>
+        {{item.username}}--{{item.password}}
+        <button @click='del(item.id)'>del</button>
+      </li>
+    </ul>
+
+    <p>添加数据</p>
+    <input type="text" placeholder="username" v-model='username' >
+    <input type="text" placeholder="password" v-model='password' >
+    <button @click='add'>add</button> 
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.0.2/vue.global.prod.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+  <script>
+    let { ref } = Vue
+    Vue.createApp({
+      setup() {
+        let userlist = ref([])
+        let username = ref('')
+        let password = ref('')
+        // 获取数据
+        let getUserList = async () => {
+          let { data } = await axios.get('/userlist')
+          userlist.value = data
+          // console.log(userlist)
+        }
+        getUserList()
+        // 删除数据
+        let del = async id => {
+          let { data: {success} } = await axios.post('/userdel', {
+            id
+          })
+          if (success) {
+            getUserList()
+          }
+        }
+        // 添加数据
+        let add = async () => {
+          if (!!username.value && !!password.value) {
+            let {data: {success}} = await axios.post('/useradd', {
+              username: username.value,
+              password: password.value,
+            })
+            if (success) {
+              username.value = ''
+              password.value = ''
+              getUserList()
+            }
+          } else {
+            console.log('输入框不能为空')
+          }
+          
+        }
+
+        return {
+          userlist,
+          username,
+          password,
+          del,
+          add
+        }
+      },
+    }).mount('#app')
+
+
+  </script>
 </body>
 </html>
