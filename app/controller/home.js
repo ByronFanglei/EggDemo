@@ -1,4 +1,4 @@
-const { Controller } = require('egg')
+const BaseController = require('./base')
 const Users = require('../model/users')
 
 let userList = [
@@ -6,13 +6,14 @@ let userList = [
   new Users(2, 'Ace', 'qweqwe'),
 ]
 
-class HomeController extends Controller {
+class HomeController extends BaseController {
   async index() {
     this.ctx.body = 'hello egg'
   }
   
   async userlist() {
-    this.ctx.body = userList
+    const { ctx, JsonResult } = this
+    ctx.body = JsonResult(userList)
   }
 
   async posttest() {
@@ -20,18 +21,18 @@ class HomeController extends Controller {
   }
 
   async userdel() {
-    const { ctx } = this
+    const { ctx, JsonResult } = this
     const { id } = ctx.request.body
     userList = userList.filter(item => item.id !== parseInt(id))
-    ctx.body = { success: true }
+    ctx.body = JsonResult()
   }
 
   async useradd() {
-    const { ctx } = this
+    const { ctx, JsonResult } = this
     const { username, password } = ctx.request.body
     console.log(username, password)
     userList.push(new Users(Date.now() + 1, username, password))
-    ctx.body = { success: true }
+    ctx.body = JsonResult()
   }
 }
 

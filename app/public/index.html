@@ -31,9 +31,8 @@
         let password = ref('')
         // 获取数据
         let getUserList = async () => {
-          let { data } = await axios.get('/userlist')
-          userlist.value = data
-          // console.log(userlist)
+          let {data: {data, success}} = await axios.get('/userlist')
+          success && (userlist.value = data)
         }
         getUserList()
         // 删除数据

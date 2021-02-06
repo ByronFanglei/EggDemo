@@ -1,0 +1,94 @@
+2021-02-05 16:38:42,882 WARN 5472 [-/127.0.0.1/-/17ms POST /posttest] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-02-05 16:38:42,885 WARN 5472 [-/127.0.0.1/-/19ms POST /posttest] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (E:\EggDemo\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (E:\EggDemo\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (E:\EggDemo\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\EggDemo\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (E:\EggDemo\node_modules\koa-override\index.js:38:12)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "missing csrf token"
+pid: 5472
+hostname: WN-20210107NKEO
+
+2021-02-05 16:39:55,487 WARN 14772 [-/127.0.0.1/-/16ms POST /posttest] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-02-05 16:39:55,489 WARN 14772 [-/127.0.0.1/-/19ms POST /posttest] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (E:\EggDemo\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (E:\EggDemo\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (E:\EggDemo\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\EggDemo\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (E:\EggDemo\node_modules\koa-override\index.js:38:12)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 14772
+hostname: WN-20210107NKEO
+
+2021-02-05 16:40:13,619 WARN 18492 [-/127.0.0.1/-/15ms POST /posttest] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-02-05 16:40:13,622 WARN 18492 [-/127.0.0.1/-/18ms POST /posttest] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (E:\EggDemo\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (E:\EggDemo\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (E:\EggDemo\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\EggDemo\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (E:\EggDemo\node_modules\koa-override\index.js:38:12)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 18492
+hostname: WN-20210107NKEO
+
+2021-02-05 17:22:20,765 WARN 19916 [-/127.0.0.1/-/15ms POST /] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-02-05 17:22:20,768 WARN 19916 [-/127.0.0.1/-/17ms POST /] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (E:\EggDemo\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (E:\EggDemo\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (E:\EggDemo\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\EggDemo\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\EggDemo\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (E:\EggDemo\node_modules\koa-override\index.js:38:12)
+    at dispatch (E:\EggDemo\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 19916
+hostname: WN-20210107NKEO
+
+2021-02-05 20:05:05,540 ERROR 18852 [-/127.0.0.1/-/14ms POST /login] nodejs.TypeError: ctx.validate is not a function
+    at AccountController.login (E:\EggDemo\app\controller\account.js:14:9)
+    at Object.callFn (E:\EggDemo\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\EggDemo\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\EggDemo\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\EggDemo\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at next (E:\EggDemo\node_modules\koa-compose\index.js:45:18)
+    at E:\EggDemo\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at E:\EggDemo\node_modules\koa-compose\index.js:36:12
+
+pid: 18852
+hostname: WN-20210107NKEO
+
+2021-02-06 23:31:29,729 ERROR 8188 [-/127.0.0.1/-/10ms POST /useradd] nodejs.TypeError: userList.push is not a function
+    at HomeController.useradd (F:\EggDemo\app\controller\home.js:32:25)
+    at Object.callFn (F:\EggDemo\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\EggDemo\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\EggDemo\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\EggDemo\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at next (F:\EggDemo\node_modules\koa-compose\index.js:45:18)
+    at F:\EggDemo\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (F:\EggDemo\node_modules\koa-compose\index.js:44:32)
+    at F:\EggDemo\node_modules\koa-compose\index.js:36:12
+
+pid: 8188
+hostname: ByronMi
+
